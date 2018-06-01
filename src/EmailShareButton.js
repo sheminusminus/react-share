@@ -14,7 +14,7 @@ const EmailShareButton = createShareButton('email', emailLink, props => ({
   subject: PropTypes.string,
   body: PropTypes.string,
 }, {
-  openWindow: false,
+  openWindow: props.openWindow,
   onClick: (link) => { window.location.href = link; },
 });
 
